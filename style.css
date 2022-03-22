@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Pacifico;
+    src: url(Pacifico-Regular.ttf);
+}
+#lei {
+    color: red;
+}
+#lali{
+    color: blueviolet;
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    width: max-content;
+    height: auto;
+    margin: 15px auto;
+    padding: 13px 15px;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%, red 50%);
+    animation: animacao 1.5s both;
+    transition: 1.5s all;
+}
+@keyframes animacao{
+    100%{
+        background-position: -100% 0;
+        color: white;
+    }
+}
+.poesia{
+    margin: 35px auto;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+.neymar{
+    width: 315px;
+    display: block;
+    margin: 15px auto;
+}
+img{
+    width: 315px;
+    margin: 0 auto;
+}
+.iframe{
+    text-align: center;
+}
+iframe{
+    margin: 15px auto;
+}
+.imagens{
+    text-align: center;
+}
+.agradecimentos{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.agradecimentos li{
+    margin-left: 35px;
+    list-style: none;
+}
+footer{
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid blueviolet;
+}
+.rights{
+    width: 300px;
+    text-align: center;
+    padding: 8px;
+}
+.redes{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: right;
+}
+.facebook,.instagram,.twitter{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: 1.5s all;
+}
+.facebook{
+    background-image: url(facebook2.svg);
+    margin: 0 3px;
+}
+.instagram{
+    background-image: url(instagram2.svg);
+}
+.twitter{
+    background-image: url(twitter2.svg);
+}
+.facebook2:hover,.instagram2:hover,.twitter2:hover{
+    animation: esmaecer .7s both;
+}
+.facebook2,.instagram2,.twitter2{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.facebook2{
+    background-image: url(facebook.svg);
+}
+.instagram2{
+    background-image: url(instagram.svg);
+}
+.twitter2{
+    background-image: url(twitter.svg);
+}
+@keyframes esmaecer{
+    100%{
+        opacity: 1;
+    }
+}
